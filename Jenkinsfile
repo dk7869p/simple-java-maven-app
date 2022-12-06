@@ -2,22 +2,20 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Dev from Github') {
             steps {
-                echo 'Hello World'
+                echo 'Hello from Dev environment'
             }
         }
-        
-        stage('DEV') {
+                stage('UAT from Github') {
             steps {
-                echo 'Hello World DEV'
+                echo 'Hello from UAT environment'
             }
         }
-    stage('PROD') {
-            steps {a
-                echo 'Hello World from Production'
+                stage('Prod from Github') {
+            steps {
+                echo 'Hello from PROD environment'
             }
         }
     }
-    
 }
